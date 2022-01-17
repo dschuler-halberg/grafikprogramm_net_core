@@ -37,9 +37,12 @@ namespace Grafikprogramm
           new Point(200, 250),
           new Point(20, 200)
       );
-      canvas.AddShape(circle1);
-      canvas.AddShape(triangle1);
-      canvas.AddShape(rectangle1);
+
+            VarRectangle varrect = new VarRectangle(SKColors.Red, SKColors.Transparent, 10, 10, 200, 10, 15, 200, 70, 250);
+      //canvas.AddShape(circle1);
+      //canvas.AddShape(triangle1);
+      //canvas.AddShape(rectangle1);
+      canvas.AddShape(varrect);
       string imagePath = "simple_image.png";
       ImageUtil.SavePNG(canvas, imagePath);
       ImageUtil.DisplayImage(imagePath);

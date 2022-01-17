@@ -35,11 +35,18 @@ namespace Grafikprogramm
           SKColors.Transparent,
           new Point(20, 50),
           new Point(200, 250),
-          new Point(20, 200)
-      );
+          new Point(20, 200));
+      VarRect rect1 = new VarRect(
+          SKColors.Blue,
+          SKColors.Transparent,
+          new Point(20, 50),
+          new Point(100, 250),
+          new Point(20, 200),
+          new Point(40, 150));
       canvas.AddShape(circle1);
       canvas.AddShape(triangle1);
       canvas.AddShape(rectangle1);
+      canvas.AddShape(rect1);
       string imagePath = "simple_image.png";
       ImageUtil.SavePNG(canvas, imagePath);
       ImageUtil.DisplayImage(imagePath);

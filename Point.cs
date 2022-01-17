@@ -6,7 +6,7 @@ namespace Grafikprogramm
 {
     
 
-    class Point
+    public class Point
     {
        
         public int X { get; set; }
